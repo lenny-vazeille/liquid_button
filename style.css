@@ -1,0 +1,244 @@
+/* Color Theme Swatches in Hex */
+
+
+/*! définir des variables  */
+
+.color-theme_280px-Glass_of_Red_Wine_with_a_bottle_of_Red_Wine_-_Evan_Swigart-1-hex {
+    color: #511201;
+}
+
+.color-theme_280px-Glass_of_Red_Wine_with_a_bottle_of_Red_Wine_-_Evan_Swigart-2-hex {
+    color: #AD160F;
+}
+
+.color-theme_280px-Glass_of_Red_Wine_with_a_bottle_of_Red_Wine_-_Evan_Swigart-3-hex {
+    color: #F0F2F2;
+}
+
+.color-theme_280px-Glass_of_Red_Wine_with_a_bottle_of_Red_Wine_-_Evan_Swigart-4-hex {
+    color: #F8E8E8;
+}
+
+.color-theme_280px-Glass_of_Red_Wine_with_a_bottle_of_Red_Wine_-_Evan_Swigart-5-hex {
+    color: #F2E5BD;
+}
+
+@font-face {
+    font-family: "Playfair Display', serif";
+    src: url("./Font/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("ttf"), url("./Font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("ttf");
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0c0c0c;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+/* container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+
+/*** Global ***/
+
+.container_wine {
+    padding: 37px 110px;
+}
+
+a {
+    position: relative;
+    padding: 50px 100px;
+    display: block;
+    text-decoration: none;
+    /*text-transform: uppercase;
+    */
+    width: 50px;
+    text-align: center;
+    margin: 10%;
+    overflow: hidden;
+    /* border-radius: 0px 0px 45px 45px; */
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+
+a span {
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+
+/** Liquid Animation  **/
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+
+/**************** ONE ****************/
+
+
+/* Color wine_red */
+
+a .liquid {
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 200px;
+    height: 200px;
+    background: #AD160F;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+a .liquid:hover {
+    top: -120px;
+}
+
+a .liquid:before,
+a .liquid::after {
+    content: "";
+    position: absolute;
+    width: 247%;
+    height: 247%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+a .liquid:before {
+    border-radius: 46%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+
+a .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, 0.5);
+    animation: animate 10s linear infinite;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    color: white;
+    filter: invert(2);
+    -webkit-filter: invert(2);
+}
+
+
+/**************** TWO ****************/
+
+
+/* Color wine_white */
+
+a .liquid1 {
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 200px;
+    height: 200px;
+    background: #f1e08e;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+a .liquid1:hover {
+    top: -120px;
+}
+
+a .liquid1:before,
+a .liquid1::after {
+    content: "";
+    position: absolute;
+    width: 247%;
+    height: 247%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+a .liquid1:before {
+    border-radius: 46%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+
+a .liquid1::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, 0.5);
+    animation: animate 10s linear infinite;
+}
+
+
+/**************** THREE ****************/
+
+
+/* Color wine_rose */
+
+a .liquid2 {
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 200px;
+    height: 200px;
+    background: #c75656b3;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+a .liquid2:hover {
+    top: -120px;
+}
+
+a .liquid2:before,
+a .liquid2::after {
+    content: "";
+    position: absolute;
+    width: 247%;
+    height: 247%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+a .liquid2:before {
+    border-radius: 46%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+
+a .liquid2::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, 0.5);
+    animation: animate 10s linear infinite;
+}
